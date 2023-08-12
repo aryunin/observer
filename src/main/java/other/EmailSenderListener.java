@@ -7,10 +7,10 @@ import person.Person;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-public class EmailSenderPersonCreatorListener implements EmailSender, PropertyChangeListener {
+public class EmailSenderListener implements EmailSender, PropertyChangeListener {
     private final EmailSender emailSender;
 
-    public EmailSenderPersonCreatorListener() {
+    public EmailSenderListener() {
         this.emailSender = new EmailSenderImpl();
     }
 

@@ -1,4 +1,4 @@
-import other.EmailSenderPersonCreatorListener;
+import other.EmailSenderListener;
 import other.ObservablePersonCreator;
 import person.PersonData;
 
@@ -8,7 +8,7 @@ public class Main {
         var personCreator = new ObservablePersonCreator();
 
         // подписываем один раз на фабрику все необходимые Listener-ы
-        var emailSender = new EmailSenderPersonCreatorListener();
+        var emailSender = new EmailSenderListener();
         personCreator.addListener(emailSender);
 
         // в другой части кода получаем необходимые вызовы Listener-ов при создании Person в фабрике
